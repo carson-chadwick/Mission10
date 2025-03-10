@@ -1,0 +1,349 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Mission10",
+    "version": "1.0"
+  },
+  "paths": {
+    "/BowlingTeam/bowlers": {
+      "get": {
+        "tags": [
+          "BowlingTeam"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/BowlingTeam/teams": {
+      "get": {
+        "tags": [
+          "BowlingTeam"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Team"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Team"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Team"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Bowler": {
+        "type": "object",
+        "properties": {
+          "bowlerId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "bowlerLastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "bowlerFirstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "bowlerMiddleInit": {
+            "type": "string",
+            "nullable": true
+          },
+          "bowlerAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "bowlerCity": {
+            "type": "string",
+            "nullable": true
+          },
+          "bowlerState": {
+            "type": "string",
+            "nullable": true
+          },
+          "bowlerZip": {
+            "type": "string",
+            "nullable": true
+          },
+          "bowlerPhoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "teamId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "bowlerScores": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BowlerScore"
+            },
+            "nullable": true
+          },
+          "team": {
+            "$ref": "#/components/schemas/Team"
+          }
+        },
+        "additionalProperties": false
+      },
+      "BowlerScore": {
+        "type": "object",
+        "properties": {
+          "matchId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "gameNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "bowlerId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rawScore": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "handiCapScore": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "wonGame": {
+            "type": "boolean"
+          },
+          "bowler": {
+            "$ref": "#/components/schemas/Bowler"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MatchGame": {
+        "type": "object",
+        "properties": {
+          "matchId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "gameNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "winningTeamId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "match": {
+            "$ref": "#/components/schemas/TourneyMatch"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Team": {
+        "type": "object",
+        "properties": {
+          "teamId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "teamName": {
+            "type": "string",
+            "nullable": true
+          },
+          "captainId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "bowlers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Bowler"
+            },
+            "nullable": true
+          },
+          "tourneyMatchEvenLaneTeams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TourneyMatch"
+            },
+            "nullable": true
+          },
+          "tourneyMatchOddLaneTeams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TourneyMatch"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tournament": {
+        "type": "object",
+        "properties": {
+          "tourneyId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tourneyDate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "tourneyLocation": {
+            "type": "string",
+            "nullable": true
+          },
+          "tourneyMatches": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TourneyMatch"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TourneyMatch": {
+        "type": "object",
+        "properties": {
+          "matchId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tourneyId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "lanes": {
+            "type": "string",
+            "nullable": true
+          },
+          "oddLaneTeamId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "evenLaneTeamId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "evenLaneTeam": {
+            "$ref": "#/components/schemas/Team"
+          },
+          "matchGames": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MatchGame"
+            },
+            "nullable": true
+          },
+          "oddLaneTeam": {
+            "$ref": "#/components/schemas/Team"
+          },
+          "tourney": {
+            "$ref": "#/components/schemas/Tournament"
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
