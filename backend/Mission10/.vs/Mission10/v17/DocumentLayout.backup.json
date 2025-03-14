@@ -38,11 +38,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             },
             {
               "$type": "Document",
@@ -54,8 +58,7 @@
               "RelativeToolTip": "Mission10\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-10T20:24:22.567Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T20:24:22.567Z"
             },
             {
               "$type": "Document",
@@ -65,7 +68,7 @@
               "RelativeDocumentMoniker": "Mission10\\Controllers\\BowlingTeamController.cs",
               "ToolTip": "C:\\Users\\dcars\\source\\repos\\Mission10\\backend\\Mission10\\Mission10\\Controllers\\BowlingTeamController.cs",
               "RelativeToolTip": "Mission10\\Controllers\\BowlingTeamController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwBwAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-10T19:46:14.515Z",
               "EditorCaption": ""
@@ -80,8 +83,7 @@
               "RelativeToolTip": "Mission10\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T19:45:25.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T19:45:25.881Z"
             },
             {
               "$type": "Document",
@@ -93,8 +95,7 @@
               "RelativeToolTip": "Mission10\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-10T19:41:14.138Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T19:41:14.138Z"
             },
             {
               "$type": "Document",
@@ -106,8 +107,7 @@
               "RelativeToolTip": "Mission10\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T19:38:55.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T19:38:55.65Z"
             },
             {
               "$type": "Document",
@@ -119,8 +119,7 @@
               "RelativeToolTip": "Mission10\\Data\\Bowler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T20:10:38.905Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T20:10:38.905Z"
             },
             {
               "$type": "Document",
@@ -132,8 +131,7 @@
               "RelativeToolTip": "Mission10\\Data\\BowlingLeagueContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T19:38:18.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T19:38:18.135Z"
             }
           ]
         }

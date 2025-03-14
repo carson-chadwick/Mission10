@@ -134,4 +134,4 @@ C:\Users\dcars\source\repos\Mission10\backend\Mission10\Mission10\bin\Debug\net8
 C:\Users\dcars\source\repos\Mission10\backend\Mission10\Mission10\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\dcars\source\repos\Mission10\backend\Mission10\Mission10\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\dcars\source\repos\Mission10\backend\Mission10\Mission10\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\dcars\source\repos\Mission10\backend\Mission10\Mission10\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\dcars\source\repos\Mission10\backend\Mission10\Mission10\obj\Debug\net8.0\Mission10.sourcelink.json

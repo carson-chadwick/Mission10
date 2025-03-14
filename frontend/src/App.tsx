@@ -4,6 +4,7 @@ import BowlingList from './BowlingList'
 
 function App() {
 
+  // This is the main component that renders the BowlingHead and BowlingList components
   return (
     <>
       <BowlingHead />

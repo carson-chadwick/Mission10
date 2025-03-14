@@ -15,11 +15,11 @@ function BowlingList() {
     };
     fetchBowler();
   }, []);
-
+// Filter bowlers to only include those on the Marlins or Sharks teams
   const filteredBowlers = bowlers.filter(
     (b) => b.teamName === "Marlins" || b.teamName === "Sharks"
   );
-
+//Bowlers Table
   return (
     <>
       <h1>Bowlers</h1>

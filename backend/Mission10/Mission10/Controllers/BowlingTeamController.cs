@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace Mission10.Controllers
-{
+{ // This controller handles the retrieval of bowlers and their associated teams
+    // It uses the BowlingLeagueContext to access the database and perform queries
     [Route("[controller]")]
     [ApiController]
     public class BowlingTeamController : ControllerBase
